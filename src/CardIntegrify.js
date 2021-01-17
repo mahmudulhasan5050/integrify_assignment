@@ -14,7 +14,7 @@ const CardIntegrify = ({ data }) => {
                 <Card style={{ backgroundColor: "white", marginBottom: "1em", width: "30em", marginRight: "1em", padding: "2em" }}>
                     <Grid item container key={index} direction="column" alignItems="center" >
                         {list ?
-                            <Avatar>{list.name}</Avatar>
+                            <Avatar>{(list.name).slice(0, 1)}</Avatar>
                             : null}
 
                         <Grid item>
